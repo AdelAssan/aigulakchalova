@@ -1,0 +1,243 @@
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('./vendor/coolvetica\ rg.ttf');
+  }
+  
+
+  /*.page{
+    background-color: #fff;
+    min-width: 1100px;
+    max-width: 1600px;
+    margin: 0 auto;
+    font-family: 'Coolvetica', sans-serif;
+  }
+
+  .header{
+    border: 2px solid #E5E5E5;
+    min-width: 1100px;
+    margin: 0 auto;
+    min-height: 94px;
+    display: flex;
+    align-items: center;
+
+  }
+
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    min-width: 1100px;
+  }
+ 
+  .nav_list{
+    list-style: none;
+    display: flex;
+  }
+
+  .nav_li{
+    
+  }
+
+  button{
+    border: none;
+    background-color: inherit;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin: 0 5px 0 0;
+  }*/
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Coolvetica', sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    color: #222;
+  }
+  
+  /* ===== Header ===== */
+  .header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 40px;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav__list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav__list a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    transition: 0.2s;
+  }
+  
+  .nav__list a:hover {
+    color: #007b8f;
+  }
+  
+  .lang {
+    font-weight: 700;
+  }
+  
+  /* ===== Hero ===== */
+    .hero {
+        position: relative;
+        width: 100%;
+        min-height: 700px;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        /* Фото задается в качестве фона */
+        background: 
+          linear-gradient(
+            90deg,
+            rgba(0, 123, 143, 0.9) 0%,
+            rgba(0, 123, 143, 0.7) 40%,
+            rgba(0, 123, 143, 0) 70%
+          ),
+          url("./images/mama1.jpg") center/100% auto no-repeat;
+      }
+      /* ===== Контент внутри hero ===== */
+      .hero__content {
+        position: relative;
+        z-index: 2;
+        max-width: 459px;
+        margin-left: 60px;
+      }
+  .hero__subtitle {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .hero__title {
+    font-size: 80px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    max-width: 300px;
+    position: relative;
+  }
+
+  .hero__title::after {
+    content: "";
+    display: block;
+    width: 100%;              /* длина линии */
+    height: 2px;              /* толщина */
+    background-color: #fff;   /* цвет линии */
+    margin-top: 12px;         /* отступ сверху от текста */
+    border-radius: 2px;       /* скруглённые края, чтобы выглядело аккуратно */
+  }
+  .hero__text {
+    font-size: 40px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  /* ===== Кнопка ===== */
+  .btn {
+    background-color: #fff;
+    color: #000;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  .btn:hover {
+    background-color: #dcdcdc;
+  }
+
+  
+  .hero__subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  
+  .hero__title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .hero__text {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    padding: 10px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #007b8f;
+    color: #fff;
+  }
+  
+  
+  /* ===== Achievements ===== */
+  .achievements {
+    background-color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .section-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+  
+  .achievements__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .achievement-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 180px;
+  }
+  
+  .number {
+    display: block;
+    font-size: 36px;
+    color: #007b8f;
+    font-weight: 700;
+  }
+  
+  .achievement-center img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #007b8f;
+  }
+  
+  
