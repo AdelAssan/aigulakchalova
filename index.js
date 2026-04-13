@@ -88,3 +88,18 @@ render();
 
 // при изменении окна
 window.addEventListener('resize', render);
+
+const burger = document.getElementById('burger');
+const menu = document.getElementById('menu');
+
+burger.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    burger.classList.toggle('active');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!menu.contains(e.target) && !burger.contains(e.target)) {
+      menu.classList.remove('active');
+      burger.classList.remove('active');
+    }
+  });

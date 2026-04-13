@@ -6,42 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="./vendor/normalize.css">
   <link rel="stylesheet" type="text/css" href="./index.css">
-  <script src="./index.js" defer></script>
   <title>Aigul Akchalova</title>
 </head>
 
 <body>
   <div class="page">
-    <!--<header class="header">
-     <nav class="nav">
-        <ul class="nav_list">
-            <li class="nav_li"><button>Главная</button></li>
-            <li class="nav_li"><button>Обо мне</button></li>
-            <li class="nav_li"><button>Проекты</button></li>
-            <li class="nav_li"><button>Медиа</button></li>
-        </ul>
-        <button>RU</button>
-     </nav>
-    </header>
-
-    <main class="content">
-      <section class="description">
-        
-      </section>
-    </main>
-
-    <footer class="footer">
-      
-    </footer> -->
     <header class="header">
         <nav class="nav">
-          <ul class="nav__list">
+          <ul class="nav__list" id="menu">
             <li><a href="#about">Главная</a></li>
             <li><a href="#bio">Обо мне</a></li>
             <li><a href="#projects">Проекты</a></li>
             <li><a href="#media">Медиа</a></li>
           </ul>
           <div class="lang">RU</div>
+          <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </nav>
       </header>
       <section id="home" class="hero">
@@ -65,7 +48,7 @@
               <span class="achievement__num">1</span>
               <div class="achievement__content">
                 <h4 class="achievement__text">За верность делу</h4>
-                <p>II степень</p>
+                <p>III степень</p>
               </div>
             </div>
       
@@ -73,15 +56,15 @@
               <span class="achievement__num">2</span>
               <div class="achievement__content">
                 <h4 class="achievement__text">За верность делу</h4>
-                <p>III степень</p>
+                <p>II степень</p>
               </div>
             </div>
       
             <div class="achievement">
               <span class="achievement__num">3</span>
               <div class="achievement__content">
-                <h4 class="achievement__text">Ерен еңбегі</h4>
-                <p>Үшін берілетін марапат</p>
+                <h4 class="achievement__text">Ерен еңбегі үшін</h4>
+                <p>Медаль</p>
               </div>
             </div>
           </div>
@@ -96,8 +79,8 @@
             <div class="achievement right">
               <span class="achievement__num">4</span>
               <div class="achievement__content">
-                <h4 class="achievement__text">Облысқа сіңірген еңбегі</h4>
-                <p>Үшін берілетін марапат</p>
+                <h4 class="achievement__text">Облысқа сіңірген еңбегі үшін</h4>
+                <p>Медаль</p>
               </div>
             </div>
       
@@ -131,7 +114,7 @@
                 за толпой, а строить дорогу
               </h2>
               <p class="about__text">
-                Айгул Акчалова — депутат Жамбылского областного маслихата, успешный предприниматель и общественный деятель.
+                Айгуль Акчалова — депутат Жамбылского областного маслихата, успешный предприниматель и общественный деятель.
                 Более 20 лет она посвятила развитию региона, созданию рабочих мест и поддержке социальных инициатив.
               </p>
               <p class="about__text">
@@ -151,11 +134,11 @@
               </div>
               <div class="timeline__item">
                 <span class="timeline__year">2018</span>
-                <p class="timeline_text">Запуск социальных проектов и менторских программ</p>
+                <p class="timeline_text">Расширение бизнес‑проектов и благоустройство региона</p>
               </div>
               <div class="timeline__item">
-                <span class="timeline__year">2020</span>
-                <p class="timeline_text">Расширение бизнес‑проектов и благоустройство региона</p>
+                <span class="timeline__year">2019</span>
+                <p class="timeline_text">Запуск социальных проектов и менторских программ</p>
               </div>
             </div>
         
@@ -167,8 +150,8 @@
           <h3 class="priorities__title">Приоритеты</h3>
           <div class="priorities__grid">
             <div class="priority-card">
-              <h4>Благоустройство</h4>
-              <p>Развитие инфраструктуры, озеленение, создание комфортной городской среды для жителей области.</p>
+              <h4>Запуск социальных проектов</h4>
+              <p>Создание комфортной городской среды для жителей области, развитие инфраструктуры, озеленение.</p>
             </div>
             <div class="priority-card">
               <h4>Креативная экономика</h4>
@@ -202,13 +185,13 @@
             <div class="slide active">
               <div class="slide__text">
                 <span class="slide__count">1/3</span>
-                <h4 class="slide__title">Кооператив «Кулмакшеры»</h4>
+                <h4 class="slide__title">Кооператив «Кулмакшер»</h4>
                 <p class="slide__desc">
-                  Объединение женщин для выращивания и экспорта экологически чистой продукции.
+                  Объединение женщин и сельских жителей для выращивания и экспорта экологически чистой продукции.
                 </p>
               </div>
               <div class="slide__image">
-                <img src="./images/hmel.jpeg" alt="Кордайский хмель" />
+                <img src="./images/hmel.png" alt="Кордайский хмель" />
               </div>
             </div>
       
@@ -216,7 +199,7 @@
             <div class="slide">
               <div class="slide__text">
                 <span class="slide__count">2/3</span>
-                <h4 class="slide__title">Центр при Turksib</h4>
+                <h4 class="slide__title">Центр поддержки предпринимателей(Кооператив Turksib)</h4>
                 <p class="slide__desc">
                   Многофункциональный центр, объединяющий пространства для бизнеса, образования и общественных мероприятий.
                   Точка роста для предпринимателей региона.
@@ -233,7 +216,7 @@
                 <span class="slide__count">3/3</span>
                 <h4 class="slide__title">Инициативы по благоустройству</h4>
                 <p class="slide__desc">
-                  Новые детские площадки, освещение улиц, строительство спортивных объектов и социальных магазинов в районах Тараза и области.
+                  Высадка зеленых насаждений: "аллея женщин предпринимателей"; установка креативных конструкций для сбора пластиковых мзделий
                 </p>
               </div>
               <div class="slide__image">
@@ -261,7 +244,7 @@
             Устойчивое развитие регионов невозможно без активного участия женщин в предпринимательстве,
             общественной жизни и принятии решений.
           </p>
-          <p class="quote__author">— Айгул Акчалова</p>
+          <p class="quote__author">— Айгуль Акчалова</p>
         </div>
       </section>
       
@@ -293,7 +276,7 @@
       
             <!-- Повторы для заполнения (ты заменишь позже) -->
             <div class="media__item">
-              <a href="https://www.instagram.com/p/CsPw1oGID69/?igsh=NmdndWE3NnUwOGEz" target="_blank">
+              <a href="https://www.instagram.com/p/CcaLO3jM9Mw/?img_index=7&igsh=MWF0N3pzc3M0ZWVuYw==" target="_blank">
                 <img src="./images/insta3.jpg" alt="post">
               </a>
             </div>
@@ -380,6 +363,7 @@
                     Айгуль Акчалова
                   </a>
                 </p>
+                
               </div>
             </div>
       
@@ -422,9 +406,8 @@
       
         </div>
       </footer>
-      
-      
   </div>
+  <script src="./index.js" defer></script>
 </body>
 
 </html>
