@@ -2,6 +2,7 @@ const slides = document.querySelectorAll('.slide');
   const prevBtn = document.querySelector('.slider__btn--prev');
   const nextBtn = document.querySelector('.slider__btn--next');
   let current = 0;
+  
   function showSlide(index) {
     slides.forEach(slide => slide.classList.remove('active'));
     slides[index].classList.add('active');
@@ -31,63 +32,90 @@ const track = document.querySelector('.media__track');
 const items = document.querySelectorAll('.media__item');
 const prevBtn1 = document.querySelector('.media__btn--prev');
 const nextBtn1 = document.querySelector('.media__btn--next');
-/*let index = 4; // центральная
-function render() {
-  items.forEach(item => item.classList.remove('media__item--center'));
-  items[index].classList.add('media__item--center');
-  const offset = (index - 2) * -220;
-  track.style.transform = `translateX(${offset}px)`;
-}
-prevBtn1.addEventListener('click', () => {
-  index = (index - 1 + items.length) % items.length;
-  render();
-});
-nextBtn1.addEventListener('click', () => {
-  index = (index + 1) % items.length;
-  render();
-});
-render();*/
 
-let index = 2; // старт — 3-я карточка
+// 1. Возвращаем индекс на 2 (третья карточка)
+let index = 2; 
 
-function render() {
-  // убираем выделение
-  items.forEach(item => item.classList.remove('media__item--center'));
+let touchStartX = 0;
+let touchEndX = 0;
 
-  // выделяем текущую
-  items[index].classList.add('media__item--center');
-
-  const container = document.querySelector('.media');
-  const containerCenter = container.offsetWidth / 2;
-
-  const activeItem = items[index];
-  const itemCenter = activeItem.offsetLeft + activeItem.offsetWidth / 2;
-
-  const offset = itemCenter - containerCenter;
-
-  track.style.transform = `translateX(${-offset}px)`;
+function isMobile() {
+  return window.innerWidth <= 768;
 }
 
-// кнопки
-nextBtn1.addEventListener('click', () => {
+function render() {
+  // Сначала убираем выделение у всех (для обоих режимов)
+  items.forEach(item => item.classList.remove('media__item--center'));
+
+  if (isMobile()) {
+    // 📱 МОБИЛКА
+    const width = track.offsetWidth;
+    track.style.transform = `translateX(-${index * width}px)`;
+  } else {
+    // 💻 ДЕСКТОП 
+    // 2. Явно выделяем карточку по индексу
+    if (items[index]) {
+      items[index].classList.add('media__item--center');
+    }
+
+    const container = document.querySelector('.media');
+    const containerCenter = container.offsetWidth / 2;
+    const activeItem = items[index];
+    
+    // Твой оригинальный расчет центра
+    const itemCenter = activeItem.offsetLeft + activeItem.offsetWidth / 2;
+    const offset = itemCenter - containerCenter;
+
+    track.style.transform = `translateX(${-offset}px)`;
+  }
+}
+
+// Функции переключения с зацикливанием
+function nextSlide() {
   if (index < items.length - 1) {
     index++;
-    render();
+  } else {
+    index = 0; // Переход с последней на первую
   }
-});
+  render();
+}
 
-prevBtn1.addEventListener('click', () => {
+function prevSlide() {
   if (index > 0) {
     index--;
-    render();
+  } else {
+    index = items.length - 1; // Переход с первой на последнюю
   }
-});
+  render();
+}
 
-// первый рендер
-render();
+// Кнопки
+nextBtn1.addEventListener('click', nextSlide);
+prevBtn1.addEventListener('click', prevSlide);
 
-// при изменении окна
+// --- СВАЙП ДЛЯ МОБИЛКИ ---
+track.addEventListener('touchstart', (e) => {
+  touchStartX = e.changedTouches[0].screenX;
+}, { passive: true });
+
+track.addEventListener('touchend', (e) => {
+  touchEndX = e.changedTouches[0].screenX;
+  handleSwipe();
+}, { passive: true });
+
+function handleSwipe() {
+  const swipeThreshold = 50;
+  if (touchStartX - touchEndX > swipeThreshold) {
+    nextSlide(); 
+  } else if (touchEndX - touchStartX > swipeThreshold) {
+    prevSlide();
+  }
+}
+
 window.addEventListener('resize', render);
+
+// Первый запуск
+render();
 
 const burger = document.getElementById('burger');
 const menu = document.getElementById('menu');
