@@ -131,3 +131,18 @@ burger.addEventListener('click', () => {
       burger.classList.remove('active');
     }
   });
+
+  function toggleLang() {
+    const langMenu = document.getElementById('langMenu');
+    langMenu.classList.toggle('active');
+  }
+  
+  // Закрытие выпадашки при клике вне её области
+  window.addEventListener('click', (event) => {
+    const langParent = document.getElementById('langParent');
+    const langMenu = document.getElementById('langMenu');
+    
+    if (!langParent.contains(event.target)) {
+      langMenu.classList.remove('active');
+    }
+  });
