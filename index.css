@@ -175,21 +175,22 @@
     .lang__dropdown {
       position: absolute;
     /* Уводим физически, чтобы тень не торчала */
-    top: -500px; 
+    top: -200px; 
     right: -5px;
     
     /* Полное скрытие */
-    display: none;
+    display: none !important;
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
     
     /* Убираем тень, пока меню закрыто (важно для мобилок!) */
-    box-shadow: none;
+    box-shadow: none !important;
+    border: none !important;
     }
 
     .lang__dropdown.active {
-      display: block;
+      display: block !important;
     visibility: visible;
     opacity: 1;
     top: 100%; /* Возвращаем на место */
