@@ -175,10 +175,12 @@
     .lang__dropdown {
       right: -5px;
       visibility: hidden;
+      opacity: 0;
     }
 
     .lang__dropdown.active {
       visibility: visible;
+      opacity: 1;
   }
   }
   
@@ -1123,11 +1125,11 @@
   }
 
   .media__btn--next{
-    margin-left: 35px;
+    margin-left: 30px;
   }
 
   .media__btn--prev {
-    margin-right: 35px;
+    margin-right: 30px;
   }
 
 }
