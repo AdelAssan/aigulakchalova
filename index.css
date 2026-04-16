@@ -176,11 +176,13 @@
       right: -5px;
       visibility: hidden;
       opacity: 0;
+      display: none;
     }
 
     .lang__dropdown.active {
       visibility: visible;
       opacity: 1;
+      display: block;
   }
   }
   
