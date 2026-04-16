@@ -177,12 +177,16 @@
       visibility: hidden;
       opacity: 0;
       display: none;
+      pointer-events: none;
+      top: -9999px;
     }
 
     .lang__dropdown.active {
       visibility: visible;
       opacity: 1;
       display: block;
+      top: 100%;
+      pointer-events: auto;
   }
   }
   
