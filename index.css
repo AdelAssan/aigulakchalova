@@ -173,20 +173,29 @@
     }
 
     .lang__dropdown {
-      right: -5px;
-      visibility: hidden;
-      opacity: 0;
-      display: none;
-      pointer-events: none;
-      top: -9999px;
+      position: absolute;
+    /* Уводим физически, чтобы тень не торчала */
+    top: -500px; 
+    right: -5px;
+    
+    /* Полное скрытие */
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    
+    /* Убираем тень, пока меню закрыто (важно для мобилок!) */
+    box-shadow: none;
     }
 
     .lang__dropdown.active {
-      visibility: visible;
-      opacity: 1;
       display: block;
-      top: 100%;
-      pointer-events: auto;
+    visibility: visible;
+    opacity: 1;
+    top: 100%; /* Возвращаем на место */
+    pointer-events: auto;
+    /* Возвращаем тень только когда меню открыто */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   }
   }
   
