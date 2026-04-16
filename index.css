@@ -124,7 +124,7 @@
   @media (max-width: 768px) {
     .nav__list {
       position: fixed;
-      top: 70px; /* под хедером */
+      top: 94px; /* под хедером */
       left: 0;
       width: 100%;
       height: calc(100vh - 500px);
@@ -134,9 +134,12 @@
       gap: 25px;
       padding: 30px;
   
-      transform: translateY(-120%);
+      transform: translateY(-150%);
       transition: 0.3s ease;
       z-index: 999;
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
     }
     
     .nav{
@@ -145,6 +148,9 @@
 
     .nav__list.active {
       transform: translateY(0);
+      visibility: visible;
+      opacity: 1;
+      pointer-events: auto;
     }
   
     .burger {
