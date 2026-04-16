@@ -174,7 +174,12 @@
 
     .lang__dropdown {
       right: -5px;
+      visibility: hidden;
     }
+
+    .lang__dropdown.active {
+      visibility: visible;
+  }
   }
   
   /* ===== Hero ===== */
@@ -1091,7 +1096,7 @@
     height: 450px;
     opacity: 1;
     background: transparent;
-    pointer-events: none;
+    pointer-events: auto;
   }
 
   .media__item img {

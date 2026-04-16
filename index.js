@@ -28,6 +28,46 @@ btnPrev.addEventListener('click', () => {
   mediaTrack.scrollBy({ left: -220, behavior: 'smooth' });
 });
 
+// --- СВАЙП ДЛЯ СЕКЦИИ ПРОЕКТОВ ---
+const projectsContent = document.querySelector('.slider__content');
+let projTouchStartX = 0;
+let projTouchEndX = 0;
+let projTouchStartY = 0;
+let projTouchEndY = 0;
+
+projectsContent.addEventListener('touchstart', (e) => {
+  projTouchStartX = e.changedTouches[0].screenX;
+  projTouchStartY = e.changedTouches[0].screenY;
+}, { passive: true });
+
+projectsContent.addEventListener('touchend', (e) => {
+  projTouchEndX = e.changedTouches[0].screenX;
+  projTouchEndY = e.changedTouches[0].screenY;
+  handleProjectsSwipe();
+}, { passive: true });
+
+function handleProjectsSwipe() {
+  const swipeThreshold = 50; // порог срабатывания в пикселях
+  const diffX = projTouchStartX - projTouchEndX;
+  const diffY = projTouchStartY - projTouchEndY;
+
+  // Проверка: если движение по горизонтали больше, чем по вертикали (защита от скролла вниз)
+  if (Math.abs(diffX) > Math.abs(diffY)) {
+    if (Math.abs(diffX) > swipeThreshold) {
+      if (diffX > 0) {
+        // Свайп влево -> следующий слайд
+        // Используем твою существующую переменную current и функции
+        current = (current + 1) % slides.length;
+        showSlide(current);
+      } else {
+        // Свайп вправо -> предыдущий слайд
+        current = (current - 1 + slides.length) % slides.length;
+        showSlide(current);
+      }
+    }
+  }
+}
+
 const track = document.querySelector('.media__track');
 const items = document.querySelectorAll('.media__item');
 const prevBtn1 = document.querySelector('.media__btn--prev');
@@ -94,23 +134,34 @@ nextBtn1.addEventListener('click', nextSlide);
 prevBtn1.addEventListener('click', prevSlide);
 
 // --- СВАЙП ДЛЯ МОБИЛКИ ---
+let touchStartY = 0; // Добавим Y, чтобы не ломать прокрутку страницы вниз
+
 track.addEventListener('touchstart', (e) => {
   touchStartX = e.changedTouches[0].screenX;
+  touchStartY = e.changedTouches[0].screenY;
 }, { passive: true });
 
 track.addEventListener('touchend', (e) => {
   touchEndX = e.changedTouches[0].screenX;
-  handleSwipe();
-}, { passive: true });
+  const touchEndY = e.changedTouches[0].screenY;
 
-function handleSwipe() {
+  const diffX = touchStartX - touchEndX;
+  const diffY = touchStartY - touchEndY;
+
+  // Если палец двигался по вертикали (скролл) сильнее, чем по горизонтали — не свайпаем
+  if (Math.abs(diffY) > Math.abs(diffX)) return;
+
+  // Порог свайпа (50px). Если меньше — это просто клик, и ссылка сработает сама
   const swipeThreshold = 50;
-  if (touchStartX - touchEndX > swipeThreshold) {
-    nextSlide(); 
-  } else if (touchEndX - touchStartX > swipeThreshold) {
-    prevSlide();
+  
+  if (Math.abs(diffX) > swipeThreshold) {
+    if (diffX > 0) {
+      nextSlide(); 
+    } else {
+      prevSlide();
+    }
   }
-}
+}, { passive: true });
 
 window.addEventListener('resize', render);
 
