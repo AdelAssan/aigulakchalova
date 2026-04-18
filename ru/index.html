@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../vendor/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../index.css">
+  <title>Aigul Akchalova</title>
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+        <nav class="nav">
+          <ul class="nav__list" id="menu">
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#bio">Обо мне</a></li>
+            <li><a href="#projects">Проекты</a></li>
+            <li><a href="#media">Медиа</a></li>
+          </ul>
+          <div class="lang" id="langParent">
+            <span class="lang__current" onclick="toggleLang()">RU</span>
+            <ul class="lang__dropdown" id="langMenu">
+              <li><a href="./">RU</a></li>
+              <li><a href="../kz/">KZ</a></li>
+              <li><a href="../">EN</a></li>
+            </ul>
+          </div>
+          <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </header>
+      <section id="home" class="hero">
+        <div class="hero__content">
+          <p class="hero__subtitle">Быть полезной. Вдохновлять. Создавать возможности.</p>
+          <h1 class="hero__title">Айгуль Акчалова</h1>
+          <p class="hero__text">
+            Депутат Жамбылского областного маслихата, основатель социальных и бизнес-проектов, наставник для молодёжи и предпринимателей региона.
+          </p>
+          <a href="#contact" class="btn">Связаться</a>
+        </div>
+      </section>
+      
+      <section id="achievements" class="achievements">
+        <h2 class="achievements__title">Достижения</h2>
+      
+        <div class="achievements__wrapper">
+          <!-- Левая колонка -->
+          <div class="achievements__col achievements__col--left">
+            <div class="achievement">
+              <span class="achievement__num">1</span>
+              <div class="achievement__content">
+                <h4 class="achievement__text">За верность делу</h4>
+                <p>Медаль III степени</p>
+              </div>
+            </div>
+      
+            <div class="achievement achievement_middle">
+              <span class="achievement__num">2</span>
+              <div class="achievement__content">
+                <h4 class="achievement__text">За верность делу</h4>
+                <p>Медаль II степени</p>
+              </div>
+            </div>
+      
+            <div class="achievement">
+              <span class="achievement__num">3</span>
+              <div class="achievement__content">
+                <h4 class="achievement__text">Ерен еңбегі үшін</h4>
+                <p>Медаль</p>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Центральное фото -->
+          <div class="achievements__photo">
+            <img src="../images/mama2.jpg" alt="Айгул Акчалова">
+          </div>
+      
+          <!-- Правая колонка -->
+          <div class="achievements__col achievements__col--right">
+            <div class="achievement right">
+              <span class="achievement__num">4</span>
+              <div class="achievement__content">
+                <h4 class="achievement__text">Облысқа сіңірген еңбегі үшін</h4>
+                <p>Медаль</p>
+              </div>
+            </div>
+      
+            <div class="achievement right achievement_middle2">
+              <span class="achievement__num">5</span>
+              <div class="achievement__content">
+                <h4 class="achievement__text">30 лет Независимости</h4>
+                <p>Медаль</p>
+              </div>
+            </div>
+      
+            <div class="achievement right">
+              <span class="achievement__num">6</span>
+              <div class="achievement__content">
+                <h4 class="achievement__text">АруАна</h4>
+                <p>Премия президента Республики Казахстан</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="bio" class="about">
+        <section id="bio" class="about">
+          <div class="about__container">
+        
+            <div class="about__left">
+              <h4 class="about__subtitle">Обо мне</h4>
+              <h2 class="about__title">
+                Лидерство — это не идти<br>
+                за толпой, а строить дорогу
+              </h2>
+              <p class="about__text">
+                Айгуль Акчалова — депутат Жамбылского областного маслихата, успешный предприниматель и общественный деятель.
+                Более 20 лет она посвятила развитию региона, созданию рабочих мест и поддержке социальных инициатив.
+              </p>
+              <p class="about__text">
+                Её подход сочетает бизнес‑мышление с глубокой социальной ответственностью. Каждый проект — это вклад в будущее
+                Жамбылской области и Казахстана в целом.
+              </p>
+            </div>
+        
+            <div class="about__right timeline">
+              <div class="timeline__item">
+                <span class="timeline__year">2006</span>
+                <p class="timeline_text">Start of entrepreneurial activity</p>
+              </div>
+              <div class="timeline__item">
+                <span class="timeline__year">2016</span>
+                <p class="timeline_text">Launching community initiatives</p>
+              </div>
+              <div class="timeline__item">
+                <span class="timeline__year">2018</span>
+                <p class="timeline_text">Launch of business and social projects, mentorship programs, and regional development</p>
+              </div>
+              <div class="timeline__item">
+                <span class="timeline__year">2021</span>
+                <p class="timeline_text">Elected as a Deputy of the Regional Maslikhat</p>
+              </div>
+            </div>
+        
+          </div>
+        </section>
+        
+      
+        <div class="priorities">
+          <h3 class="priorities__title">Приоритеты</h3>
+          <div class="priorities__grid">
+            <div class="priority-card">
+              <h4>Запуск социальных проектов</h4>
+              <p>Создание комфортной городской среды для жителей области, развитие инфраструктуры, озеленение.</p>
+            </div>
+            <div class="priority-card">
+              <h4>Креативная экономика</h4>
+              <p>Поддержка малого и среднего бизнеса, развитие креативных индустрий и создание новых рабочих мест.</p>
+            </div>
+            <div class="priority-card">
+              <h4>Взаимодействие с людьми</h4>
+              <p>Открытый диалог с жителями, решение актуальных проблем и совместная работа над улучшением качества жизни.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="projects">
+        <h3 class="projects__title">Мои проекты</h3>
+      
+        <div class="projects__slider">
+          <button class="slider__btn slider__btn--prev">
+            <!-- стрелка влево -->
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="none"
+                 xmlns="[w3.org](http://www.w3.org/2000/svg)">
+              <path d="M15 18L9 12L15 6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"/>
+            </svg>
+          </button>
+      
+          <div class="slider__content">
+            <!-- Слайд 1 -->
+            <div class="slide active">
+              <div class="slide__text">
+                <span class="slide__count">1/3</span>
+                <h4 class="slide__title">Кооператив «Кулмакшер»</h4>
+                <p class="slide__desc">
+                  Объединение женщин и сельских жителей для выращивания и экспорта экологически чистой продукции.
+                </p>
+              </div>
+              <div class="slide__image">
+                <img src="../images/hmel.png" alt="Кордайский хмель" />
+              </div>
+            </div>
+      
+            <!-- Слайд 2 -->
+            <div class="slide">
+              <div class="slide__text">
+                <span class="slide__count">2/3</span>
+                <h4 class="slide__title">Центр поддержки предпринимателей(Комплекс Turksib)</h4>
+                <p class="slide__desc">
+                  Многофункциональный центр, объединяющий пространства для бизнеса, образования и общественных мероприятий.
+                  Точка роста для предпринимателей региона.
+                </p>
+              </div>
+              <div class="slide__image">
+                <img src="../images/turksib.jpeg" alt="Центр при Turksib" />
+              </div>
+            </div>
+      
+            <!-- Слайд 3 -->
+            <div class="slide">
+              <div class="slide__text">
+                <span class="slide__count">3/3</span>
+                <h4 class="slide__title">Инициативы по благоустройству</h4>
+                <p class="slide__desc">
+                  Высадка зеленых насаждений: "аллея женщин предпринимателей"; установка креативных конструкций для сбора пластиковых изделий
+                </p>
+              </div>
+              <div class="slide__image">
+                <img src="../images/project3.jpg" alt="Women Business Forum" />
+              </div>
+            </div>
+          </div>
+      
+          <button class="slider__btn slider__btn--next">
+            <!-- стрелка вправо -->
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="none"
+                 xmlns="[w3.org](http://www.w3.org/2000/svg)">
+              <path d="M9 6L15 12L9 18"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      
+        <div class="projects__quote">
+          <p class="quote__symbol">“</p>
+          <p class="quote__text">
+            Устойчивое развитие регионов невозможно без активного участия женщин в предпринимательстве,
+            общественной жизни и принятии решений.
+          </p>
+          <p class="quote__author">— Айгуль Акчалова</p>
+        </div>
+      </section>
+      
+      <section id="media" class="media">
+        <div class="media__slider">
+      
+          <div class="media__track">
+      
+            <!-- Instagram пост 1 -->
+            <div class="media__item">
+              <a href="https://www.instagram.com/p/DQOnwRZjPWX/?igsh=anRzenN1NXZsbncy" target="_blank">
+                <img src="../images/insta1.jpg" alt="post">
+              </a>
+            </div>
+      
+            <!-- Instagram пост 2 -->
+            <div class="media__item">
+              <a href="https://www.instagram.com/p/CrvB2lLM_lL/?igsh=MThjNWU4bm5ydHFhNw%3D%3D" target="_blank">
+                <img src="../images/insta2.jpg" alt="post">
+              </a>
+            </div>
+      
+            <!-- Facebook видео -->
+            <div class="media__item">
+              <a href="https://www.instagram.com/p/DQ8yv_RDMmQ/?igsh=MWh2cmQ1cWFvbjhmZQ==" target="_blank">
+                <img src="../images/insta4.jpg" alt="facebook video">
+              </a>
+            </div>
+      
+            <!-- Повторы для заполнения (ты заменишь позже) -->
+            <div class="media__item">
+              <a href="https://www.instagram.com/p/CcaLO3jM9Mw/?img_index=7&igsh=MWF0N3pzc3M0ZWVuYw==" target="_blank">
+                <img src="../images/insta3.jpg" alt="post">
+              </a>
+            </div>
+      
+            <div class="media__item">
+              <a href="https://www.instagram.com/p/CaPYWFOMVvw/?igsh=MTB3cTRjcnBpbmE3Ng==" target="_blank">
+                <img src="../images/insta5.jpg" alt="post">
+              </a>
+            </div>
+      
+            <div class="media__item">
+              <a href="https://www.instagram.com/p/Cpg7gY-jPI0/?img_index=1&igsh=bTk4NnVzZWw0bQ==" target="_blank">
+                <img src="../images/insta6.jpg" alt="facebook video">
+              </a>
+            </div>
+      
+            <div class="media__item">
+              <a href="https://www.instagram.com/p/CrkMhRjIRc3/?igsh=MWVqdGpvajFtajAwYQ==" target="_blank">
+                <img src="../images/insta7.jpg" alt="post">
+              </a>
+            </div>
+      
+            <div class="media__item">
+              <a href="https://www.instagram.com/p/C_TDjS9s6E4/?igsh=MXZhYjQ0OXJ1dXMw" target="_blank">
+                <img src="../images/insta8.jpg" alt="post">
+              </a>
+            </div>
+      
+          </div>
+      
+          <!-- КОНТРОЛЫ И НАЗВАНИЕ СНИЗУ -->
+          <div class="media__controls">
+            <button class="media__btn media__btn--prev">
+              <svg width="30" height="30" viewBox="0 0 24 24">
+                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+      
+            <h3 class="media__title">Медиа</h3>
+      
+            <button class="media__btn media__btn--next">
+              <svg width="30" height="30" viewBox="0 0 24 24">
+                <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+      
+        </div>
+      </section>
+      
+      
+      
+      <footer id="contact" class="contact">
+        <div class="contact__container">
+      
+          <!-- ВЕРХ -->
+          <div class="contact__top">
+            
+            <!-- ЛЕВО: заголовок -->
+            <div class="contact__left">
+              <h2 class="contact__title">ОБРАТНАЯ СВЯЗЬ</h2>
+            </div>
+      
+            <!-- ПРАВО: текст + соцсети -->
+            <div class="contact__right">
+              <p class="contact__text">
+                Открыта для предложений, идей и сотрудничества.  
+                Свяжитесь через социальные сети или отправьте сообщение.
+              </p>
+      
+              <hr class="contact__line">
+      
+              <div class="contact__socials">
+                <p><strong>Instagram</strong><br>
+                  <a class="contact__link"  href="https://www.instagram.com/aigul_akchalova_/" target="_blank">
+                    @aigul_akchalova_
+                  </a>
+                </p>
+      
+                <p><strong>Facebook</strong><br>
+                  <a class="contact__link" href="https://www.facebook.com/ajgul.akcalova" target="_blank">
+                    Айгуль Акчалова
+                  </a>
+                </p>
+                
+              </div>
+            </div>
+      
+          </div>
+      
+          <!-- НИЗ: форма -->
+          <form class="contact__form" action="https://formspree.io/f/xdapqdky" method="POST">
+  
+            <div class="form__grid">
+          
+              <!-- ЛЕВАЯ КОЛОНКА -->
+              <div class="form__left">
+                <div class="form__group">
+                  <label>Ваше имя</label>
+                  <input type="text" name="name" placeholder="Имя" required>
+                </div>
+          
+                <div class="form__group">
+                  <label>Электронная почта</label>
+                  <input type="email" name="email" placeholder="Email" required>
+                </div>
+              </div>
+          
+              <!-- ПРАВАЯ КОЛОНКА -->
+              <div class="form__group form__group--message">
+                <label>Ваше сообщение</label>
+                <textarea name="message" placeholder="Сообщение" required></textarea>
+              </div>
+          
+            </div>
+          
+            <button type="submit" class="form__btn">
+              Отправить сообщение
+            </button>
+          
+          </form>
+      
+        </div>
+      </footer>
+      
+        </div>
+      </footer>
+  </div>
+  <script src="../index.js" defer></script>
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -7,175 +7,193 @@
   <link rel="stylesheet" type="text/css" href="./vendor/normalize.css">
   <link rel="stylesheet" type="text/css" href="./index.css">
   <title>Aigul Akchalova</title>
-</head>
-
-<body>
-  <div class="page">
+</head>    
+    
+    <body>
+      <div class="page">
+    <!-- HEADER -->
     <header class="header">
-        <nav class="nav">
-          <ul class="nav__list" id="menu">
-            <li><a href="#home">Главная</a></li>
-            <li><a href="#bio">Обо мне</a></li>
-            <li><a href="#projects">Проекты</a></li>
-            <li><a href="#media">Медиа</a></li>
+      <nav class="nav">
+        <ul class="nav__list" id="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#bio">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#media">Media</a></li>
+        </ul>
+    
+        <div class="lang" id="langParent">
+          <span class="lang__current" onclick="toggleLang()">EN</span>
+          <ul class="lang__dropdown" id="langMenu">
+            <li><a href="./ru">RU</a></li>
+            <li><a href="./kz/">KZ</a></li>
+            <li><a href="./">EN</a></li>
           </ul>
-          <div class="lang" id="langParent">
-            <span class="lang__current" onclick="toggleLang()">RU</span>
-            <ul class="lang__dropdown" id="langMenu">
-              <li><a href="./">RU</a></li>
-              <li><a href="./kz/">KZ</a></li>
-              <li><a href="./en/">EN</a></li>
-            </ul>
+        </div>
+    
+        <div class="burger" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero__content">
+        <p class="hero__subtitle">Be helpful. Inspire. Create opportunities.</p>
+        <h1 class="hero__title">Aigul Akchalova</h1>
+        <p class="hero__text">
+          Deputy of the Zhambyl Regional Maslikhat, founder of social and business projects,
+          mentor for youth and entrepreneurs in the region.
+        </p>
+        <a href="#contact" class="btn">Contact</a>
+      </div>
+    </section>
+    
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="achievements">
+      <h2 class="achievements__title">Achievements</h2>
+    
+      <div class="achievements__wrapper">
+    
+        <div class="achievements__col achievements__col--left">
+          <div class="achievement">
+            <span class="achievement__num">1</span>
+            <div class="achievement__content">
+              <h4 class="achievement__text">For Dedication</h4>
+              <p>Medal, III Degree</p>
+            </div>
           </div>
-          <div class="burger" id="burger">
-            <span></span>
-            <span></span>
-            <span></span>
+    
+          <div class="achievement achievement_middle">
+            <span class="achievement__num">2</span>
+            <div class="achievement__content">
+              <h4 class="achievement__text">For Dedication</h4>
+              <p>Medal, II Degree</p>
+            </div>
           </div>
-        </nav>
-      </header>
-      <section id="home" class="hero">
-        <div class="hero__content">
-          <p class="hero__subtitle">Быть полезной. Вдохновлять. Создавать возможности.</p>
-          <h1 class="hero__title">Айгуль Акчалова</h1>
-          <p class="hero__text">
-            Депутат Жамбылского областного маслихата, основатель социальных и бизнес-проектов, наставник для молодёжи и предпринимателей региона.
+    
+          <div class="achievement">
+            <span class="achievement__num">3</span>
+            <div class="achievement__content">
+              <h4 class="achievement__text">For Labor Merit</h4>
+              <p>Medal</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="achievements__photo">
+          <img src="./images/mama2.jpg" alt="Aigul Akchalova">
+        </div>
+    
+        <div class="achievements__col achievements__col--right">
+          <div class="achievement right">
+            <span class="achievement__num">4</span>
+            <div class="achievement__content">
+              <h4 class="achievement__text">Contribution to the Region</h4>
+              <p>Medal</p>
+            </div>
+          </div>
+    
+          <div class="achievement right achievement_middle2">
+            <span class="achievement__num">5</span>
+            <div class="achievement__content">
+              <h4 class="achievement__text">30 Years of Independence</h4>
+              <p>Medal</p>
+            </div>
+          </div>
+    
+          <div class="achievement right">
+            <span class="achievement__num">6</span>
+            <div class="achievement__content">
+              <h4 class="achievement__text">AruAna</h4>
+              <p>Presidential Award of the Republic of Kazakhstan</p>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+    
+    <!-- ABOUT -->
+    <section id="bio" class="about">
+      <div class="about__container">
+    
+        <div class="about__left">
+          <h4 class="about__subtitle">About Me</h4>
+          <h2 class="about__title">
+            Leadership is not following the crowd,<br>
+            but building the road
+          </h2>
+    
+          <p class="about__text">
+            Aigul Akchalova is a deputy of the Zhambyl regional maslikhat,
+            a successful entrepreneur and public figure.
+            For over 20 years, she has contributed to regional development,
+            job creation, and support of social initiatives.
           </p>
-          <a href="#contact" class="btn">Связаться</a>
+    
+          <p class="about__text">
+            Her approach combines business thinking with deep social responsibility.
+            Each project is a contribution to the future of the Zhambyl region
+            and Kazakhstan as a whole.
+          </p>
         </div>
-      </section>
-      
-      <section id="achievements" class="achievements">
-        <h2 class="achievements__title">Достижения</h2>
-      
-        <div class="achievements__wrapper">
-          <!-- Левая колонка -->
-          <div class="achievements__col achievements__col--left">
-            <div class="achievement">
-              <span class="achievement__num">1</span>
-              <div class="achievement__content">
-                <h4 class="achievement__text">За верность делу</h4>
-                <p>Медаль III степени</p>
-              </div>
-            </div>
-      
-            <div class="achievement achievement_middle">
-              <span class="achievement__num">2</span>
-              <div class="achievement__content">
-                <h4 class="achievement__text">За верность делу</h4>
-                <p>Медаль II степени</p>
-              </div>
-            </div>
-      
-            <div class="achievement">
-              <span class="achievement__num">3</span>
-              <div class="achievement__content">
-                <h4 class="achievement__text">Ерен еңбегі үшін</h4>
-                <p>Медаль</p>
-              </div>
-            </div>
+    
+        <div class="about__right timeline">
+          <div class="timeline__item">
+            <span class="timeline__year">2006</span>
+            <p class="timeline_text">Started entrepreneurial activity</p>
           </div>
-      
-          <!-- Центральное фото -->
-          <div class="achievements__photo">
-            <img src="./images/mama2.jpg" alt="Айгул Акчалова">
+    
+          <div class="timeline__item">
+            <span class="timeline__year">2016</span>
+            <p class="timeline_text">Elected as deputy of regional maslikhat</p>
           </div>
-      
-          <!-- Правая колонка -->
-          <div class="achievements__col achievements__col--right">
-            <div class="achievement right">
-              <span class="achievement__num">4</span>
-              <div class="achievement__content">
-                <h4 class="achievement__text">Облысқа сіңірген еңбегі үшін</h4>
-                <p>Медаль</p>
-              </div>
-            </div>
-      
-            <div class="achievement right achievement_middle2">
-              <span class="achievement__num">5</span>
-              <div class="achievement__content">
-                <h4 class="achievement__text">30 лет Независимости</h4>
-                <p>Медаль</p>
-              </div>
-            </div>
-      
-            <div class="achievement right">
-              <span class="achievement__num">6</span>
-              <div class="achievement__content">
-                <h4 class="achievement__text">АруАна</h4>
-                <p>Премия президента Республики Казахстан</p>
-              </div>
-            </div>
+    
+          <div class="timeline__item">
+            <span class="timeline__year">2018</span>
+            <p class="timeline_text">Expansion of business projects and regional development</p>
+          </div>
+    
+          <div class="timeline__item">
+            <span class="timeline__year">2021</span>
+            <p class="timeline_text">Launch of social and mentoring programs</p>
           </div>
         </div>
-      </section>
-      
-      <section id="bio" class="about">
-        <section id="bio" class="about">
-          <div class="about__container">
-        
-            <div class="about__left">
-              <h4 class="about__subtitle">Обо мне</h4>
-              <h2 class="about__title">
-                Лидерство — это не идти<br>
-                за толпой, а строить дорогу
-              </h2>
-              <p class="about__text">
-                Айгуль Акчалова — депутат Жамбылского областного маслихата, успешный предприниматель и общественный деятель.
-                Более 20 лет она посвятила развитию региона, созданию рабочих мест и поддержке социальных инициатив.
-              </p>
-              <p class="about__text">
-                Её подход сочетает бизнес‑мышление с глубокой социальной ответственностью. Каждый проект — это вклад в будущее
-                Жамбылской области и Казахстана в целом.
-              </p>
-            </div>
-        
-            <div class="about__right timeline">
-              <div class="timeline__item">
-                <span class="timeline__year">2006</span>
-                <p class="timeline_text">Начало предпринимательской деятельности</p>
-              </div>
-              <div class="timeline__item">
-                <span class="timeline__year">2006</span>
-                <p class="timeline_text">Избрание депутатом областного маслихата</p>
-              </div>
-              <div class="timeline__item">
-                <span class="timeline__year">2018</span>
-                <p class="timeline_text">Расширение бизнес‑проектов и благоустройство региона</p>
-              </div>
-              <div class="timeline__item">
-                <span class="timeline__year">2019</span>
-                <p class="timeline_text">Запуск социальных проектов и менторских программ</p>
-              </div>
-            </div>
-        
+    
+      </div>
+    
+      <div class="priorities">
+        <h3 class="priorities__title">Priorities</h3>
+    
+        <div class="priorities__grid">
+          <div class="priority-card">
+            <h4>Launch of social projects</h4>
+            <p>Creating a comfortable urban environment, infrastructure development and landscaping.</p>
           </div>
-        </section>
-        
-      
-        <div class="priorities">
-          <h3 class="priorities__title">Приоритеты</h3>
-          <div class="priorities__grid">
-            <div class="priority-card">
-              <h4>Запуск социальных проектов</h4>
-              <p>Создание комфортной городской среды для жителей области, развитие инфраструктуры, озеленение.</p>
-            </div>
-            <div class="priority-card">
-              <h4>Креативная экономика</h4>
-              <p>Поддержка малого и среднего бизнеса, развитие креативных индустрий и создание новых рабочих мест.</p>
-            </div>
-            <div class="priority-card">
-              <h4>Взаимодействие с людьми</h4>
-              <p>Открытый диалог с жителями, решение актуальных проблем и совместная работа над улучшением качества жизни.</p>
-            </div>
+    
+          <div class="priority-card">
+            <h4>Creative Economy</h4>
+            <p>Support for small and medium-sized businesses, development of creative industries and employment opportunities.</p>
+          </div>
+    
+          <div class="priority-card">
+            <h4>People Engagement</h4>
+            <p>Open dialogue with residents, solving urgent issues, and working together to improve the quality of life.</p>
           </div>
         </div>
-      </section>
-      <section id="projects" class="projects">
-        <h3 class="projects__title">Мои проекты</h3>
-      
-        <div class="projects__slider">
-          <button class="slider__btn slider__btn--prev">
+      </div>
+    </section>
+    
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+      <h3 class="projects__title">My Projects</h3>
+    
+      <div class="projects__slider">
+    
+        <button class="slider__btn slider__btn--prev">
             <!-- стрелка влево -->
             <svg width="38" height="38" viewBox="0 0 24 24" fill="none"
                  xmlns="[w3.org](http://www.w3.org/2000/svg)">
@@ -186,53 +204,51 @@
                     stroke-linejoin="round"/>
             </svg>
           </button>
-      
-          <div class="slider__content">
-            <!-- Слайд 1 -->
-            <div class="slide active">
-              <div class="slide__text">
-                <span class="slide__count">1/3</span>
-                <h4 class="slide__title">Кооператив «Кулмакшер»</h4>
-                <p class="slide__desc">
-                  Объединение женщин и сельских жителей для выращивания и экспорта экологически чистой продукции.
-                </p>
-              </div>
-              <div class="slide__image">
-                <img src="./images/hmel.png" alt="Кордайский хмель" />
-              </div>
+    
+        <div class="slider__content">
+    
+          <div class="slide active">
+            <div class="slide__text">
+              <span class="slide__count">1/3</span>
+              <h4 class="slide__title">"Kulmaksher" Cooperative</h4>
+              <p class="slide__desc">
+                Association of women and rural residents for growing and exporting eco-friendly products.
+              </p>
             </div>
-      
-            <!-- Слайд 2 -->
-            <div class="slide">
-              <div class="slide__text">
-                <span class="slide__count">2/3</span>
-                <h4 class="slide__title">Центр поддержки предпринимателей(Комплекс Turksib)</h4>
-                <p class="slide__desc">
-                  Многофункциональный центр, объединяющий пространства для бизнеса, образования и общественных мероприятий.
-                  Точка роста для предпринимателей региона.
-                </p>
-              </div>
-              <div class="slide__image">
-                <img src="./images/turksib.jpeg" alt="Центр при Turksib" />
-              </div>
-            </div>
-      
-            <!-- Слайд 3 -->
-            <div class="slide">
-              <div class="slide__text">
-                <span class="slide__count">3/3</span>
-                <h4 class="slide__title">Инициативы по благоустройству</h4>
-                <p class="slide__desc">
-                  Высадка зеленых насаждений: "аллея женщин предпринимателей"; установка креативных конструкций для сбора пластиковых изделий
-                </p>
-              </div>
-              <div class="slide__image">
-                <img src="./images/project3.jpg" alt="Women Business Forum" />
-              </div>
+            <div class="slide__image">
+              <img src="./images/hmel.png">
             </div>
           </div>
-      
-          <button class="slider__btn slider__btn--next">
+    
+          <div class="slide">
+            <div class="slide__text">
+              <span class="slide__count">2/3</span>
+              <h4 class="slide__title">Entrepreneur Support Center(Turksib Complex)</h4>
+              <p class="slide__desc">
+                A multifunctional center integrating spaces for business, education, and public events. A strategic growth point for regional entrepreneurs.
+              </p>
+            </div>
+            <div class="slide__image">
+              <img src="./images/turksib.jpeg">
+            </div>
+          </div>
+    
+          <div class="slide">
+            <div class="slide__text">
+              <span class="slide__count">3/3</span>
+              <h4 class="slide__title">Urban Improvement Initiatives</h4>
+              <p class="slide__desc">
+                Green spaces development: "Entrepreneurial Women’s Alley"; installation of creative structures for plastic waste collection.
+              </p>
+            </div>
+            <div class="slide__image">
+              <img src="./images/project3.jpg">
+            </div>
+          </div>
+    
+        </div>
+    
+        <button class="slider__btn slider__btn--next">
             <!-- стрелка вправо -->
             <svg width="38" height="38" viewBox="0 0 24 24" fill="none"
                  xmlns="[w3.org](http://www.w3.org/2000/svg)">
@@ -243,19 +259,19 @@
                     stroke-linejoin="round"/>
             </svg>
           </button>
-        </div>
-      
-        <div class="projects__quote">
-          <p class="quote__symbol">“</p>
-          <p class="quote__text">
-            Устойчивое развитие регионов невозможно без активного участия женщин в предпринимательстве,
-            общественной жизни и принятии решений.
-          </p>
-          <p class="quote__author">— Айгуль Акчалова</p>
-        </div>
-      </section>
-      
-      <section id="media" class="media">
+    
+      </div>
+    
+      <div class="projects__quote">
+        <p class="quote__symbol">“</p>
+        <p class="quote__text">
+          Sustainable regional development is impossible without active participation
+          of women in entrepreneurship, public life and decision-making.
+        </p>
+        <p class="quote__author">— Aigul Akchalova</p>
+      </div>
+    </section>
+    <section id="media" class="media">
         <div class="media__slider">
       
           <div class="media__track">
@@ -323,7 +339,7 @@
               </svg>
             </button>
       
-            <h3 class="media__title">Медиа</h3>
+            <h3 class="media__title">Media</h3>
       
             <button class="media__btn media__btn--next">
               <svg width="30" height="30" viewBox="0 0 24 24">
@@ -337,82 +353,70 @@
       </section>
       
       
-      
-      <footer id="contact" class="contact">
-        <div class="contact__container">
-      
-          <!-- ВЕРХ -->
-          <div class="contact__top">
-            
-            <!-- ЛЕВО: заголовок -->
-            <div class="contact__left">
-              <h2 class="contact__title">ОБРАТНАЯ СВЯЗЬ</h2>
-            </div>
-      
-            <!-- ПРАВО: текст + соцсети -->
-            <div class="contact__right">
-              <p class="contact__text">
-                Открыта для предложений, идей и сотрудничества.  
-                Свяжитесь через социальные сети или отправьте сообщение.
-              </p>
-      
-              <hr class="contact__line">
-      
-              <div class="contact__socials">
-                <p><strong>Instagram</strong><br>
-                  <a class="contact__link"  href="https://www.instagram.com/aigul_akchalova_/" target="_blank">
-                    @aigul_akchalova_
-                  </a>
-                </p>
-      
-                <p><strong>Facebook</strong><br>
-                  <a class="contact__link" href="https://www.facebook.com/ajgul.akcalova" target="_blank">
-                    Айгуль Акчалова
-                  </a>
-                </p>
-                
-              </div>
-            </div>
-      
+    
+    <!-- CONTACT -->
+    <footer id="contact" class="contact">
+      <div class="contact__container">
+    
+        <div class="contact__top">
+    
+          <div class="contact__left">
+            <h2 class="contact__title">CONTACT</h2>
           </div>
-      
-          <!-- НИЗ: форма -->
-          <form class="contact__form" action="https://formspree.io/f/xdapqdky" method="POST">
-  
-            <div class="form__grid">
-          
-              <!-- ЛЕВАЯ КОЛОНКА -->
-              <div class="form__left">
-                <div class="form__group">
-                  <label>Ваше имя</label>
-                  <input type="text" name="name" placeholder="Имя" required>
-                </div>
-          
-                <div class="form__group">
-                  <label>Электронная почта</label>
-                  <input type="email" name="email" placeholder="Email" required>
-                </div>
-              </div>
-          
-              <!-- ПРАВАЯ КОЛОНКА -->
-              <div class="form__group form__group--message">
-                <label>Ваше сообщение</label>
-                <textarea name="message" placeholder="Сообщение" required></textarea>
-              </div>
-          
+    
+          <div class="contact__right">
+            <p class="contact__text">
+              Open to ideas, proposals and collaboration.
+              Contact via social media or send a message.
+            </p>
+    
+            <hr class="contact__line">
+    
+            <div class="contact__socials">
+              <p><strong>Instagram</strong><br>
+                <a class="contact__link" href="https://www.instagram.com/aigul_akchalova_/" target="_blank">@aigul_akchalova_</a>
+              </p>
+    
+              <p><strong>Facebook</strong><br>
+                <a class="contact__link" href="https://www.facebook.com/ajgul.akcalova" target="_blank">Aigul Akchalova</a>
+              </p>
             </div>
-          
-            <button type="submit" class="form__btn">
-              Отправить сообщение
-            </button>
-          
-          </form>
-      
+          </div>
+    
         </div>
-      </footer>
-      
-        </div>
-      </footer>
+    
+        <form class="contact__form" action="https://formspree.io/f/xdapqdky" method="POST">
+    
+          <div class="form__grid">
+    
+            <div class="form__left">
+              <div class="form__group">
+                <label>Your Name</label>
+                <input type="text" name="name" placeholder="Name" required>
+              </div>
+    
+              <div class="form__group">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Email" required>
+              </div>
+            </div>
+    
+            <div class="form__group form__group--message">
+              <label>Your Message</label>
+              <textarea name="message" placeholder="Message" required></textarea>
+            </div>
+    
+          </div>
+    
+          <button type="submit" class="form__btn">
+            Send Message
+          </button>
+    
+        </form>
+    
+      </div>
+    </footer>
+    
   </div>
   <script src="./index.js" defer></script>
 </body>
