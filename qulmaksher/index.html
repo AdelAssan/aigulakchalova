@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./../vendor/normalize.css">
+  <link rel="stylesheet" type="text/css" href="./../index.css">
+  <title>Aigul Akchalova</title>
+</head>    
+    
+    <body>
+      <div class="page">
+        <header class="header">
+      <nav class="nav_qulmaksher">
+        <ul class="nav__list_qulmaksher" id="menu">
+          <li><a href="../index.html">Home</a></li>
+          <!--<li><a href="#bio">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#media">Media</a></li>-->
+        </ul>
+    
+        <div class="lang" id="langParent">
+          <span class="lang__current" onclick="toggleLang()">EN</span>
+          <ul class="lang__dropdown" id="langMenu">
+            <li><a href="./ru">RU</a></li>
+            <li><a href="./kz/">KZ</a></li>
+            <li><a href="./">EN</a></li>
+          </ul>
+        </div>
+    
+        <!--<div class="burger" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>-->
+      </nav>
+    </header>
+        
+           <main class="q-main">
+
+      <!-- БЛОК 1: ГЛАВНЫЙ ЭКРАН -->
+      <section id="home" class="q-hero">
+        <div class="q-wrap">
+          <div>
+            <h1>Qulmaksher</h1>
+            <h2>Born in the Steppe. Crafted for Stress Management.</h2>
+            <p class="subtitle">A product line enriched with Korday hops and steppe botanicals. Natural plant extracts help your skin and body manage stress, improve sleep quality, and support your well-being in a fast-paced lifestyle.</p>
+            <a href="#catalog"><button type="button" class="q-btn" id="toCatalog">Explore the Collection</button></a>
+          </div>
+          <div class="q-hero__scene"><img class="q-hero__card" src="../images/hmel.png" alt="Логотип Qulmaksher"><img class="q-hero__main" src="../images/hmel_woman.png"alt="Сбор кордайского хмеля в поле"></div>
+        </div>
+      </section>
+
+      <!-- БЛОК 2: АДАПТИВНОСТЬ И ФИЛОСОФИЯ -->
+      <section id="about" class="q-about">
+        <div class="q-wrap">
+          <h2>Keep Your Pace. Change Your Care.</h2>
+          <p class="description">A fast lifestyle, deadlines, and constant pressure are everyday realities for modern individuals. The steppe plants of the Korday region thrive in harsh conditions, holding a natural resilience to external stressors. Qulmaksher brings this power of adaptation into your daily routine, helping your body withstand stress and daily demands.</p>
+          <div class="q-features">
+            <div class="q-feature feature-1">
+              <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 4 6 10v10c0 9 6 14 14 17 8-3 14-8 14-17V10z"/><path d="m14 20 5 5 8-9"/></svg>
+              <h3>Protective Barrier</h3>
+              <p>Natural components of the Korday steppe for supporting the body in the rhythm of modern life.</p>
+            </div>
+            <div class="q-feature feature-2">
+              <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="14"/><path d="M12 22c3 4 13 4 16 0M14 15h.01M26 15h.01"/></svg>
+              <h3>State Management</h3>
+              <p>Natural support for the nervous system for relaxation, inner balance, and recovery after a busy day without using artificial stimulants.</p>
+            </div>
+            <div class="q-feature feature-3">
+              <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M30 24A12 12 0 1 1 16 8a10 10 0 0 0 14 16z"/></svg>
+              <h3>Quality Rest</h3>
+              <p>Restoration of physical and emotional resources after intensive loads and a demanding day.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- СКРЫТЫЙ БЛОК: ВИДЕО
+           Чтобы показать: 1) удалите слово hidden в строке ниже;
+           2) вместо заглушки вставьте код видео (см. пример в комментарии). -->
+      <section id="video" class="q-video" hidden>
+        <div class="q-wrap">
+          <h2>Видео о Qulmaksher</h2>
+          <p>Посмотрите, как рождаются продукты из Кордайского хмеля.</p>
+          <div class="q-video__frame">
+            <!-- ЗАМЕНИТЕ на ваше видео. YouTube: возьмите ID из ссылки (youtube.com/watch?v=ЭТОТ_ID)
+            <iframe src="https://www.youtube-nocookie.com/embed/ЭТОТ_ID"
+                    title="Qulmaksher"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen loading="lazy"></iframe>
+            -->
+          </div>
+        </div>
+      </section>
+
+      <!-- БЛОК 3: КАТАЛОГ -->
+      <section id="catalog" class="q-catalog">
+        <div class="q-wrap">
+
+          <!-- Категория 1 -->
+          <div class="q-category" id="catalog">
+            <div class="q-category__head"><h2>"Power of the Steppe" Care Line</h2>
+            <p class="category-desc">You don't live in ideal conditions.
+Dry air, temperature fluctuations, daily styling, urban rhythm — skin and hair constantly face external stress.
+The "Power of the Steppe" line combines five products with Korday hops for daily care.
+</p> <span class="q-quote quote">Keep your pace. Change your care.
+</span></div>
+            <div class="q-cards">
+              <article class="q-card">
+                <figure class="q-ph"><span>Фото: шампунь</span><img src="../images/shampoo.jpeg" alt="Шампунь Qulmaksher" loading="lazy" onerror="this.remove()"></figure>
+                <div class="q-card__body"><h3>Qulmaksher Botanical Shampoo — "Grounded Strength"</h3><p>Formulated for gentle cleansing, lasting freshness, and deep care without stripping moisture.</p></div>
+              </article>
+              <article class="q-card">
+                <figure class="q-ph"><span>Фото: кондиционер</span><img src="../images/conditioner.jpeg" alt="Кондиционер Qulmaksher" loading="lazy" onerror="this.remove()"></figure>
+                <div class="q-card__body"><h3>Qulmaksher Hair Conditioner — "Steppe Softness"</h3><p>Helps restore natural softness, enhances healthy shine, and protects hair against aggressive urban environmental factors.</p></div>
+              </article>
+              <article class="q-card">
+                <figure class="q-ph"><span>Фото: гель для душа</span><img src="../images/gel.jpeg" alt="Гель для душа Qulmaksher" loading="lazy" onerror="this.remove()"></figure>
+                <div class="q-card__body"><h3>Qulmaksher Shower Gel — "Morning Steppe Freshness"</h3><p>Crafted to cleanse the skin after an active day. The refreshing and relaxing feel turns an ordinary shower into a personal ritual for unwinding.</p></div>
+              </article>
+              <article class="q-card">
+                <figure class="q-ph"><span>Фото: крем для тела</span><img src="../images/cream.jpeg" alt="Крем для тела Qulmaksher" loading="lazy" onerror="this.remove()"></figure>
+                <div class="q-card__body"><h3>Qulmaksher Body Cream — "Steppe Wind Protection"</h3><p>Designed for skin exposed to dryness and weather shifts. Hydrates, nourishes, and maintains the skin’s natural protective barrier.</p></div>
+              </article>
+              <article class="q-card">
+                <figure class="q-ph"><span>Фото: массажное масло</span><img src="../images/oil.jpeg" alt="Массажное масло Qulmaksher" loading="lazy" onerror="this.remove()"></figure>
+                <div class="q-card__body"><h3>Qulmaksher Massage Oil — "Midday Sun Warmth"</h3><p>Delivers a smooth glide, promoting relaxation, deep nourishment, and silky skin. Honey helps reinforce the protective barrier, leaving skin feeling velvety and smooth.</p></div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Категория 2 -->
+          <div class="q-category">
+            <div class="q-category__head">
+              <h2>"Steppe Cradle" Sleep Collection</h2>
+              <p class="category-desc">Textile products filled with natural botanicals. The inherent calming properties of Korday hops help release emotional tension, facilitate gentle relaxation, and set the stage for deep, restorative sleep.</p>
+              <span class="q-quote quote">Bring the cozy warmth of a steppe evening into your home.</span>
+            </div>
+            <div class="q-cards">
+              <article class="q-card">
+                <figure class="q-ph"><span>Фото: игрушка-грелка</span><img src="../images/toy.jpeg" alt="Текстильная игрушка-грелка, серия к Году Козы" loading="lazy" onerror="this.remove()"></figure>
+                <div class="q-card__body"><h3>Aromatic Hops Pillows</h3><p>A soft pillow filled with Korday hops for peaceful, undisturbed sleep. Perfect for helping active children unwind gently in the evening.</p></div>
+              </article>
+              <article class="q-card">
+                <figure class="q-ph"><span>Фото: саше</span><img src="../images/sashe.jpeg" alt="Ароматическое саше для спальни" loading="lazy" onerror="this.remove()"></figure>
+                <div class="q-card__body"><h3>Aromatic Hops Sachets</h3><p>For home, car, and festive decor. A natural source of calm that is always with you. The sachet helps ease stress on the road or build a cozy atmosphere at home, while its elegant design allows it to double as a stylish accessory.</p></div>
+                
+              </article>
+            </div>
+          </div>
+
+          <!-- Категория 3 -->
+          <div class="q-category">
+            <div class="q-category__head"><h2>Qulmaksher Smart Baking</h2></div>
+            <div class="q-bake">
+              <figure class="q-ph"><span>Фото: хлеб / смесь</span><img src="../images/hleb.jpeg" alt="Смесь для хлеба на хмельной закваске" loading="lazy" onerror="this.remove()"></figure>
+              <div class="q-bake__text">
+                <h3>Dry Sourdough Mixes for Homemade Hop Bread</h3>
+                <p>A wholesome alternative to traditional bread for a balanced diet. 100% natural composition crafted without commercial yeast. Bake a fresh loaf easily in the oven or whip up quick flatbreads in the microwave.</p>
+                <span class="q-quote quote">Traditional Korday sourdough crafts for healthy nutrition.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- БЛОК 4: В РАЗРАБОТКЕ -->
+      <section id="future" class="q-future">
+  <div class="q-wrap">
+    <h2>In Development</h2>
+    <div class="q-soon">
+
+      <article class="q-soon__item">
+        <span class="q-soon__num">01</span>
+        <p class="q-soon__cat">SUPPLEMENTS</p>
+        <h3>"Steppe Resources"</h3>
+        <p class="q-soon__lead">Self-care begins with what you choose every day.</p>
+        <p class="q-soon__desc">Botanical wellness complexes based on Korday hops and native steppe flora. A new direction for Qulmaksher, transforming traditional ingredients into modern, expert-backed formulas to complement your diet.</p>
+        <p class="q-soon__tag">Not just a tradition—a botanical whose potential we continue to unlock.</p>
+        <span class="q-soon__status">Status: In Development</span>
+      </article>
+
+      <article class="q-soon__item">
+        <span class="q-soon__num">02</span>
+        <p class="q-soon__cat">BEVERAGES & LEMONADES</p>
+        <h3>"Steppe Breath"</h3>
+        <p class="q-soon__lead">Freshness with a distinctive character.</p>
+        <p class="q-soon__desc">Korday hops bring an intriguing dimension to familiar beverages. Non-alcoholic lemonades and botanical drinks featuring distinct herbal notes, bold flavor pairings, and a unique taste profile. Enhanced by fermentation to support gut microbiome health.</p>
+        <p class="q-soon__tag">Taste the spirit of the steppe.</p>
+        <span class="q-soon__status">Status: In Development</span>
+      </article>
+
+      <article class="q-soon__item">
+        <span class="q-soon__num">03</span>
+        <p class="q-soon__cat">HOPS-INFUSED HONEY</p>
+        <h3>"Steppe Gold"</h3>
+        <p class="q-soon__lead">When familiar sweetness takes on a bold new character.</p>
+        <p class="q-soon__desc">Natural honey meets Korday hops in a union of two pure elements. Smooth honey sweetness combined with expressive botanical notes creates a refined gourmet pairing.</p>
+        <p class="q-soon__tag">Honey to be truly savored, not just tasted.</p>
+        <span class="q-soon__status">Status: In Development</span>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+    </main>
+          
+          <footer id="contact" class="contact">
+      <div class="contact__container">
+    
+        <div class="contact__top">
+    
+          <div class="contact__left">
+            <h2 class="contact__title">CONTACT</h2>
+          </div>
+    
+          <div class="contact__right">
+            <p class="contact__text">
+              Open to ideas, proposals and collaboration.
+              Contact via social media or send a message.
+            </p>
+    
+            <hr class="contact__line">
+    
+            <div class="contact__socials">
+              <p><strong>Instagram</strong><br>
+                <a class="contact__link" href="https://www.instagram.com/aigul_akchalova_/" target="_blank">@aigul_akchalova_</a>
+              </p>
+    
+              <p><strong>Facebook</strong><br>
+                <a class="contact__link" href="https://www.facebook.com/ajgul.akcalova" target="_blank">Aigul Akchalova</a>
+              </p>
+            </div>
+          </div>
+    
+        </div>
+    
+        <form class="contact__form" action="https://formspree.io/f/xdapqdky" method="POST">
+    
+          <div class="form__grid">
+    
+            <div class="form__left">
+              <div class="form__group">
+                <label>Your Name</label>
+                <input type="text" name="name" placeholder="Name" required>
+              </div>
+    
+              <div class="form__group">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Email" required>
+              </div>
+            </div>
+    
+            <div class="form__group form__group--message">
+              <label>Your Message</label>
+              <textarea name="message" placeholder="Message" required></textarea>
+            </div>
+    
+          </div>
+    
+          <button type="submit" class="form__btn">
+            Send Message
+          </button>
+    
+        </form>
+    
+      </div>
+    </footer>
+    
+  </div>
+  <script src="../index.js" defer></script>
+
+
+          </body>
+</html>

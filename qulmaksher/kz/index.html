@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="kz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../../vendor/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../../index.css">
+  <title>Aigul Akchalova</title>
+</head>    
+    
+    <body>
+      <div class="page">
+         <header class="header">
+        <nav class="nav_qulmaksher">
+          <ul class="nav__list_qulmaksher" id="menu">
+            <li><a href="../kz/index.html">Басты бет</a></li>
+            <!-- <li><a href="#bio">Мен туралы</a></li> 
+            <li><a href="#projects">Жобалар</a></li>
+            <li><a href="#media">Медиа</a></li> -->
+          </ul>
+          <div class="lang" id="langParent">
+            <span class="lang__current" onclick="toggleLang()">KZ</span>
+            <ul class="lang__dropdown" id="langMenu">
+              <li><a href="../ru">RU</a></li>
+              <li><a href="./">KZ</a></li>
+              <li><a href="../">EN</a></li>
+            </ul>
+          </div>
+          <!-- <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div> -->
+        </nav>
+      </header>
+        
+           <main class="q-main">
+
+      <!-- БЛОК 1: ГЛАВНЫЙ ЭКРАН -->
+      <section id="home" class="q-hero">
+        <div class="q-wrap">
+          <div>
+            <h1>Qulmaksher</h1>
+            <h2>Даладан нәр алған. Стресске төтеп беруге көмектесу үшін жасалған.</h2>
+            <p class="subtitle">Қордай құлмағы мен дала шөптері негізінде жасалған өнімдер топтамасы. Табиғи өсімдік сығындылары тері мен ағзаның күйзеліске төтеп беруіне, ұйқы сапасын жақсартуға және қарқынды өмір салтында ағзаны қолдауға көмектеседі.</p>
+            <a href="#catalog"><button type="button" class="q-btn" id="toCatalog">Топтаманы қарау</button></a>
+          </div>
+          <div class="q-hero__scene"><img class="q-hero__card" src="../../images/hmel.png" alt="Логотип Qulmaksher"><img class="q-hero__main" src="../../images/hmel_woman.png"alt="Сбор кордайского хмеля в поле"></div>
+        </div>
+      </section>
+
+      <!-- БЛОК 2: АДАПТИВНОСТЬ И ФИЛОСОФИЯ -->
+      <section id="about" class="q-about">
+        <div class="q-wrap">
+          <h2>Өмір ырғағыңызды өзгертпеңіз. Күтімге деген көзқарасыңызды өзгертіңіз.</h2>
+          <p class="description">Қарқынды өмір ырғағы, жұмысты уақытында аяқтау қажеттілігі мен үздіксіз ширығу — қазіргі адам өмірінің шындығы. Қордай өңірінің дала өсімдіктері қатал климаттық жағдайда өсіп, сыртқы әсерлерге табиғи төзімділігімен ерекшеленеді. Qulmaksher бренді осы бейімделу күшін күнделікті күтімге арналған өнімдерге енгізіп, ағзаның жүктемелер мен күйзеліске төтеп беруіне көмектеседі.</p>
+          <div class="q-features">
+            <div class="q-feature feature-1">
+              <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 4 6 10v10c0 9 6 14 14 17 8-3 14-8 14-17V10z"/><path d="m14 20 5 5 8-9"/></svg>
+              <h3>Қорғаныш тосқауылы</h3>
+              <p>Қазіргі өмір ырғағында ағзаны қолдауға арналған Қордай даласының табиғи компоненттері.</p>
+            </div>
+            <div class="q-feature feature-2">
+              <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="14"/><path d="M12 22c3 4 13 4 16 0M14 15h.01M26 15h.01"/></svg>
+              <h3>Күйді реттеу</h3>
+              <p>Жасанды ынталандырғыштарды қолданбай, жүйке жүйесін табиғи жолмен қолдау, босаңсуға, ішкі тепе-теңдікті сақтауға және қарбалас күннен кейін күш-қуатты қалпына келтіруге көмектесу.</p>
+            </div>
+            <div class="q-feature feature-3">
+              <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M30 24A12 12 0 1 1 16 8a10 10 0 0 0 14 16z"/></svg>
+              <h3>Сапалы тынығу</h3>
+              <p>Қарқынды жүктемелер мен ауыр күннен кейін дене және эмоциялық күш-қуатты қалпына келтіру.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- СКРЫТЫЙ БЛОК: ВИДЕО
+           Чтобы показать: 1) удалите слово hidden в строке ниже;
+           2) вместо заглушки вставьте код видео (см. пример в комментарии). -->
+      <section id="video" class="q-video" hidden>
+        <div class="q-wrap">
+          <h2>Видео о Qulmaksher</h2>
+          <p>Посмотрите, как рождаются продукты из Кордайского хмеля.</p>
+          <div class="q-video__frame">
+            <!-- ЗАМЕНИТЕ на ваше видео. YouTube: возьмите ID из ссылки (youtube.com/watch?v=ЭТОТ_ID)
+            <iframe src="https://www.youtube-nocookie.com/embed/ЭТОТ_ID"
+                    title="Qulmaksher"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen loading="lazy"></iframe>
+            -->
+          </div>
+        </div>
+      </section>
+
+      <!-- БЛОК 3: КАТАЛОГ -->
+      <section id="catalog" class="q-catalog">
+        <div class="q-wrap">
+
+          <!-- Категория 1 -->
+          <div class="q-category" id="catalog">
+            <div class="q-category__head"><h2>«Дала қуаты» күтім желісі</h2>
+            <p class="category-desc">Біз әрдайым қолайлы жағдайда өмір сүрмейміз. Құрғақ ауа, температураның құбылуы, шашты күнделікті сәндеу, қаланың қарқынды тіршілігі — тері мен шаш үнемі сыртқы әсерлерге ұшырайды. «Дала қуаты» желісі күнделікті күтімге арналған, құрамында Қордай құлмағы бар бес өнімді біріктіреді.
+</p> <span class="q-quote quote">Өмір ырғағыңызды өзгертпеңіз. Күтімге деген көзқарасыңызды өзгертіңіз.
+</span></div>
+            <div class="q-cards">
+              <article class="q-card">
+                <figure class="q-ph"><span>Фото: шампунь</span><img src="../../images/shampoo.jpeg" alt="Шампунь Qulmaksher" loading="lazy" onerror="this.remove()"></figure>
+                <div class="q-card__body"><h3>Qulmaksher «Жерден нәр алған күш» сусабыны</h3><p>Шашты жұмсақ тазартуға, сергектік сыйлауға және шамадан тыс құрғатып жібермей күтім жасауға арналған.</p></div>
+              </article>
+              <article class="q-card">
+                <figure class="q-ph"><span>Фото: кондиционер</span><img src="../../images/conditioner.jpeg" alt="Кондиционер Qulmaksher" loading="lazy" onerror="this.remove()"></figure>
+                <div class="q-card__body"><h3>Qulmaksher «Дала шөптерінің жұмсақтығы» шаш кондиционері</h3><p>Шаштың табиғи жұмсақтығы мен жылтырлығын қайтаруға көмектеседі және қалалық ортаның қолайсыз әсерлерінен қорғайды.</p></div>
+              </article>
+              <article class="q-card">
+                <figure class="q-ph"><span>Фото: гель для душа</span><img src="../../images/gel.jpeg" alt="Гель для душа Qulmaksher" loading="lazy" onerror="this.remove()"></figure>
+                <div class="q-card__body"><h3>Qulmaksher «Дала таңының сергектігі» душқа арналған гелі</h3><p>Белсенді күннен кейін теріні тазартуға арналған. Сергектік пен босаңсу сезімі күнделікті душ қабылдауды жұмыстан тынығуға ауысудың жеке рәсіміне айналдырады.</p></div>
+              </article>
+              <article class="q-card">
+                <figure class="q-ph"><span>Фото: крем для тела</span><img src="../../images/cream.jpeg" alt="Крем для тела Qulmaksher" loading="lazy" onerror="this.remove()"></figure>
+                <div class="q-card__body"><h3>Qulmaksher «Дала желінен қорғаныс» дене кремі</h3><p>Құрғақ ауа мен температура өзгерістерінің әсеріне ұшырайтын тері күтіміне арналған. Теріні ылғалдандырады, нәрлендіреді және оның табиғи қорғаныш тосқауылын қолдайды.</p></div>
+              </article>
+              <article class="q-card">
+                <figure class="q-ph"><span>Фото: массажное масло</span><img src="../../images/oil.jpeg" alt="Массажное масло Qulmaksher" loading="lazy" onerror="this.remove()"></figure>
+                <div class="q-card__body"><h3>Qulmaksher «Тал түстегі күн шуағы» массаж майы</h3><p>Массаж кезінде қолдың тері бетімен жұмсақ сырғуын қамтамасыз етеді, босаңсуға, теріні нәрлендіруге және жұмсартуға ықпал етеді. Құрамындағы бал терінің қорғаныш тосқауылын сақтауға көмектесіп, оны тегіс әрі барқыттай жұмсақ етеді.</p></div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Категория 2 -->
+          <div class="q-category">
+            <div class="q-category__head">
+              <h2>«Дала бесігі» ұйқыға арналған өнімдер желісі</h2>
+              <p class="category-desc">Табиғи өсімдік толтырғыштары бар тоқыма бұйымдары. Қордай құлмағының табиғи қасиеттері эмоциялық ширығуды бәсеңдетуге, жайлы босаңсуға және тынығу кезінде терең қалпына келуге ықпал етеді.</p>
+              <span class="q-quote quote">Үйіңіздегі дала кешінің жұмсақ жылуы мен жайлылығы.</span>
+            </div>
+            <div class="q-cards">
+              <article class="q-card">
+                <figure class="q-ph"><span>Фото: игрушка-грелка</span><img src="../../images/toy.jpeg" alt="Текстильная игрушка-грелка, серия к Году Козы" loading="lazy" onerror="this.remove()"></figure>
+                <div class="q-card__body"><h3>Қордай құлмағы қосылған хош иісті жастықтар</h3>
+                    <p>Қордай құлмағымен толтырылған жұмсақ жастық тыныш әрі алаңсыз ұйқыға арналған. Әсіресе аса белсенді балалардың кешкі ойындары кезінде қолайлы: олардың біртіндеп тынышталып, демалысқа ауысуына көмектеседі.</p></div>
+              </article>
+              <article class="q-card">
+                <figure class="q-ph"><span>Фото: саше</span><img src="../../images/sashe.jpeg" alt="Ароматическое саше для спальни" loading="lazy" onerror="this.remove()"></figure>
+                <div class="q-card__body"><h3>Қордай құлмағы қосылған хош иісті сашелер</h3>
+                    <p>Үйге, автокөлік салонына және безендіруге арналған. Әрдайым жаныңыздан табылатын табиғи тыныштық көзі. Саше жол үстіндегі күйзелісті бәсеңдетуге немесе үйде жайлы атмосфера қалыптастыруға көмектеседі. Ал әсем дизайны оны сәнді безендіру бұйымы ретінде пайдалануға мүмкіндік береді.</p></div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Категория 3 -->
+          <div class="q-category">
+            <div class="q-category__head"><h2>Смарт-выпечка Qulmaksher</h2></div>
+            <div class="q-bake">
+              <figure class="q-ph"><span>Фото: хлеб / смесь</span><img src="../../images/hleb.jpeg" alt="Смесь для хлеба на хмельной закваске" loading="lazy" onerror="this.remove()"></figure>
+              <div class="q-bake__text">
+                <h3>Qulmaksher смарт-нан өнімдері</h3>
+                <p>Құлмақ ашытқысы негізінде үй нанын дайындауға арналған құрғақ қоспалар
+Теңгерімді тамақтануға арналған дәстүрлі нанның баламасы. Өнеркәсіптік ашытқы қосылмаған табиғи құрам. Қоспаның көмегімен пеште жаңа піскен үй нанын оңай дайындауға немесе микротолқынды пеште шағын нанды жылдам пісіруге болады.</p>
+                <span class="q-quote quote">Дұрыс тамақтануға арналған Қордай ашытқысының дәстүрлері.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- БЛОК 4: В РАЗРАБОТКЕ -->
+      <section id="future" class="q-future">
+  <div class="q-wrap">
+    <h2>Әзірлену үстінде</h2>
+    <div class="q-soon">
+
+      <article class="q-soon__item">
+        <span class="q-soon__num">01</span>
+        <p class="q-soon__cat">БИОЛОГИЯЛЫҚ БЕЛСЕНДІ<br>ҚОСПАЛАР</p>
+        <h3>«Дала байлығы»</h3>
+        <p class="q-soon__lead">Өзіңізге қамқорлық күнделікті таңдауыңыздан басталады.</p>
+        <p class="q-soon__desc">Қордай құлмағы мен басқа да дала өсімдіктері негізіндегі өсімдік кешендері. Qulmaksher брендінің жаңа бағыты: дәстүрлі шикізат күнделікті рационды толықтыруға арналған, ғылыми негізделген әзірлемелер мен заманауи өнімдерді жасауға негіз болады.</p>
+        <p class="q-soon__tag">Бұл жай ғана дәстүр емес. Біз мүмкіндіктерін әлі де зерттеп, ашып келе жатқан өсімдік.</p>
+        <span class="q-soon__status">Мәртебесі: Әзірлену үстінде</span>
+      </article>
+
+      <article class="q-soon__item">
+        <span class="q-soon__num">02</span>
+        <p class="q-soon__cat">ЛИМОНАДТАР МЕН <br>СУСЫНДАР</p>
+        <h3>«Дала тынысы»</h3>
+        <p class="q-soon__lead">Сергектіктің де өзіндік мінезі болады.</p>
+        <p class="q-soon__desc">Қордай құлмағы үйреншікті сусындардың күтпеген қырын ашады. Шөптердің айқын реңктері, ерекше үйлесімдері және өзіндік дәмдік сипаты бар алкогольсіз лимонадтар мен өсімдік негізіндегі сусындар. Сонымен қатар ішек микробиомасына пайдалы қасиеттері бар сусындар алу үшін ферментация әдісі де қолданылады.</p>
+        <p class="q-soon__tag">Даланың дәмін сезініңіз.</p>
+        <span class="q-soon__status">Мәртебесі: Әзірлену үстінде</span>
+      </article>
+
+      <article class="q-soon__item">
+        <span class="q-soon__num">03</span>
+        <p class="q-soon__cat">ҚҰЛМАҚ ҚОСЫЛҒАН БАЛ</p>
+        <h3>«Дала алтыны»</h3>
+        <p class="q-soon__lead">Үйреншікті тәттілік ерекше сипатқа ие болғанда.</p>
+        <p class="q-soon__desc">Табиғи бал мен Қордай құлмағы — табиғаттың екі түрлі күші мен дәмінің үйлесімі. Балдың тәттілігі мен өсімдіктің айқын дәмдік реңктері ерекше гастрономиялық үйлесім қалыптастырады.</p>
+        <p class="q-soon__tag">Бір рет дәмін татып қана қоймай, әрбір реңкін сезінгіңіз келетін бал. </p>
+        <span class="q-soon__status">Мәртебесі: Әзірлену үстінде</span>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+    </main>
+          
+           <footer id="contact" class="contact">
+          <div class="contact__container">
+        
+            <!-- ВЕРХ -->
+            <div class="contact__top">
+              
+              <!-- ЛЕВО: заголовок -->
+              <div class="contact__left">
+                <h2 class="contact__title">КЕРІ БАЙЛАНЫС</h2>
+              </div>
+        
+              <!-- ПРАВО: текст + соцсети -->
+              <div class="contact__right">
+                <p class="contact__text">
+                  Ұсыныстарға, идеяларға және ынтымақтастыққа ашықпын.
+                  Әлеуметтік желілер арқылы байланыса аласыз немесе хабарлама қалдырыңыз.
+                </p>
+        
+                <hr class="contact__line">
+        
+                <div class="contact__socials">
+                  <p><strong>Instagram</strong><br>
+                    <a class="contact__link"  href="https://www.instagram.com/aigul_akchalova_/" target="_blank">
+                      @aigul_akchalova_
+                    </a>
+                  </p>
+        
+                  <p><strong>Facebook</strong><br>
+                    <a class="contact__link" href="https://www.facebook.com/ajgul.akcalova" target="_blank">
+                      Айгүл Ақшалова
+                    </a>
+                  </p>
+                  
+                </div>
+              </div>
+        
+            </div>
+        
+            <!-- НИЗ: форма -->
+            <form class="contact__form" action="https://formspree.io/f/xdapqdky" method="POST">
+    
+              <div class="form__grid">
+            
+                <!-- ЛЕВАЯ КОЛОНКА -->
+                <div class="form__left">
+                  <div class="form__group">
+                    <label>Аты-жөніңіз</label>
+                    <input type="text" name="name" placeholder="Аты" required>
+                  </div>
+            
+                  <div class="form__group">
+                    <label>Электрондық пошта</label>
+                    <input type="email" name="email" placeholder="Email" required>
+                  </div>
+                </div>
+            
+                <!-- ПРАВАЯ КОЛОНКА -->
+                <div class="form__group form__group--message">
+                  <label>Сіздің хабарламаңыз</label>
+                  <textarea name="message" placeholder="Хабарлама" required></textarea>
+                </div>
+            
+              </div>
+            
+              <button type="submit" class="form__btn">
+                Хабарлама жіберу
+              </button>
+            
+            </form>
+        
+          </div>
+        </footer>
+    
+  </div>
+  <script src="../../index.js" defer></script>
+
+
+          </body>
+</html>
